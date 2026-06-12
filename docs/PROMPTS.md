@@ -32,8 +32,8 @@ Procura o nome do pais na base de grupos e responde com o grupo e os adversarios
 Exemplo:
 ```
 Voce: qual o grupo do brasil?
-Assistente: Brasil esta no Grupo E (CONMEBOL).
-Adversarios no grupo: Colombia, Suica, Coreia do Sul.
+Assistente: Brasil esta no Grupo C (CONMEBOL).
+Adversarios no grupo: Marrocos, Haiti, Escocia.
 ```
 
 ### Jogadores

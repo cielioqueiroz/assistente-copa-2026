@@ -90,14 +90,14 @@ O notebook abre no navegador e roda o assistente passo a passo.
 
 ```
 Voce: qual o grupo do brasil?
-Assistente: Brasil esta no Grupo E (CONMEBOL).
-Adversarios no grupo: Colombia, Suica, Coreia do Sul.
+Assistente: Brasil esta no Grupo C (CONMEBOL).
+Adversarios no grupo: Marrocos, Haiti, Escocia.
 
 Voce: quem sao os favoritos?
 Assistente: Favoritos para a Copa 2026 (segundo a base): ...
 
 Voce: quando e a final?
-Assistente: Datas importantes da Copa 2026: ...
+Assistente: A final sera em 19 de julho de 2026, no MetLife Stadium (Nova Jersey).
 ```
 
 ## Os 6 Passos do Desafio

@@ -13,11 +13,11 @@ Para cada pergunta, verifiquei dois pontos:
 
 | # | Pergunta | Esperado | Resultado |
 |---|----------|----------|-----------|
-| 1 | "qual o grupo do brasil?" | Grupo E, com os adversarios | OK |
+| 1 | "qual o grupo do brasil?" | Grupo C (Marrocos, Haiti, Escocia) | OK |
 | 2 | "quem sao os favoritos?" | Lista de favoritos da base | OK |
 | 3 | "fale sobre messi" | Dados do Messi da base | OK |
-| 4 | "quando e a final?" | Lista de datas importantes | OK |
-| 5 | "qual o grupo de portugal?" | Grupo B, com os adversarios | OK |
+| 4 | "quando e a final?" | 19 de julho de 2026, no MetLife Stadium | OK |
+| 5 | "qual o grupo de portugal?" | Grupo K (RD Congo, Uzbequistao, Colombia) | OK |
 | 6 | "quanto custa o ingresso?" | Resposta generica (dado nao existe na base) | OK |
 
 ## O que funcionou bem
