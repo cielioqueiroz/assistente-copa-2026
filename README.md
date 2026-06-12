@@ -1,130 +1,142 @@
-# Copa 2026 AI: Assistente Virtual sobre a Copa do Mundo
+# ⚽ Copa 2026 AI - Assistente Virtual da Copa do Mundo
 
-Assistente virtual que responde perguntas sobre a Copa do Mundo FIFA 2026 a partir de uma base de conhecimento estruturada. Projeto final do Lab "Construa Seu Assistente Virtual Com Inteligencia Artificial" da DIO.
+> Assistente de IA generativa que responde dúvidas sobre a Copa do Mundo FIFA 2026 usando uma base de conhecimento e busca na web, de forma clara e sem inventar informações.
 
-## Visao Geral
+## 🤖 O Que é o Copa 2026 AI?
 
-O Copa 2026 AI recebe uma pergunta em texto e responde com base nos dados do arquivo `data/base_conhecimento.json`. Quando a informacao nao existe na base, ele avisa que nao tem o dado em vez de inventar uma resposta.
+O Copa 2026 AI é um assistente virtual que ajuda torcedores e curiosos a encontrar, num lugar só, informações sobre a Copa do Mundo de 2026: grupos, seleções, jogadores, datas e favoritos. Ele entende a pergunta em linguagem natural e responde com base em informações organizadas, priorizando a confiabilidade.
 
-O assistente funciona em dois modos:
+**O que ele faz:**
 
-- IA generativa: quando ha uma chave da API do Google Gemini configurada, ele envia a pergunta, a base de conhecimento e as instrucoes do sistema para o modelo Gemini, que entende a linguagem natural e responde de forma contextualizada. Ele usa a base como fonte principal e, quando a pergunta foge da base, faz uma busca na web em tempo real (Google Search) e cita a fonte.
-- Busca local: quando nao ha chave configurada, ele cai num modo offline que identifica o assunto por palavras-chave e monta a resposta direto da base. Assim o projeto roda sem custo e sem internet.
+- ✅ Responde sobre grupos, seleções, jogadores, datas e favoritos
+- ✅ Usa a base de conhecimento como fonte principal
+- ✅ Busca na web em tempo real quando a pergunta foge da base
+- ✅ Avisa quando não tem a informação, em vez de chutar
 
-Publico-alvo: torcedores e qualquer pessoa que queira consultar rapidamente informacoes da Copa 2026.
+**O que ele NÃO faz:**
 
-## O que o assistente faz
+- ❌ Não inventa dados, estatísticas ou resultados
+- ❌ Não crava um campeão como se fosse previsão certa
+- ❌ Não favorece nenhuma seleção
 
-- Responde sobre selecoes e em qual grupo cada uma esta
-- Mostra os jogadores em destaque cadastrados na base
-- Lista as datas importantes do torneio
-- Apresenta os favoritos segundo a base, deixando claro que sao estimativas
-- Avisa quando nao tem a informacao pedida
-- Guarda o historico da conversa em memoria durante a sessao
+## 📸 Demonstração
 
-## Estrutura do Projeto
+![Copa 2026 AI rodando](assets/demo.png)
+
+## 🏗️ Arquitetura
+
+```mermaid
+flowchart TD
+    U[Usuario] --> I[Interface - chat web, terminal ou notebook]
+    I --> A[Copa 2026 AI]
+    A --> B[Base de Conhecimento em JSON]
+    A --> M[IA Generativa - Google Gemini]
+    M --> W[Busca na Web - Google Search]
+    B --> R[Resposta ao usuario]
+    M --> R
+```
+
+**Stack:**
+
+- Interface: Streamlit (chat web), terminal e Jupyter Notebook
+- IA: Google Gemini (modelo `gemini-2.5-flash`) com busca na web
+- Dados: base de conhecimento em JSON
+- Linguagem: Python 3.9+
+
+## 📁 Estrutura do Projeto
 
 ```
 assistente-copa-2026/
 ├── README.md
-├── PITCH.md
-├── requirements.txt
-├── demo_notebook.ipynb
+├── PITCH.md                       # Roteiro do pitch de 3 minutos
+├── requirements.txt               # Dependencias do projeto
+├── .env.example                   # Modelo para a chave de API
+├── demo_notebook.ipynb            # Demonstracao interativa no Jupyter
+│
 ├── data/
-│   └── base_conhecimento.json
+│   └── base_conhecimento.json     # Base de dados da Copa 2026
+│
 ├── docs/
-│   ├── DOCUMENTACAO.md
-│   ├── PROMPTS.md
-│   └── METRICAS.md
+│   ├── DOCUMENTACAO.md            # Documentacao tecnica e arquitetura
+│   ├── PROMPTS.md                 # Prompts e regras de resposta
+│   └── METRICAS.md                # Avaliacao e metricas
+│
+├── assets/
+│   └── demo.png                   # Imagem do projeto rodando
+│
 └── src/
-    ├── assistente.py
-    └── utils.py
+    ├── app.py                     # Chat web (Streamlit)
+    ├── assistente.py              # Logica principal do assistente
+    └── utils.py                   # Funcoes auxiliares
 ```
 
-## Como Rodar
+## 🚀 Como Executar
 
-Requer Python 3.9 ou superior.
-
-Instale as dependencias:
+### 1. Instalar dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Configurar a IA generativa (opcional)
+### 2. (Opcional) Ativar a IA generativa
 
-Para usar o modo de IA generativa, pegue uma chave gratuita do Google Gemini em https://aistudio.google.com/apikey, copie `.env.example` para `.env` e preencha:
+Pegue uma chave gratuita do Google Gemini em https://aistudio.google.com/apikey, copie `.env.example` para `.env` e preencha:
 
 ```
 GEMINI_API_KEY=sua-chave-aqui
 ```
 
-Sem essa chave, o assistente roda no modo de busca local.
+Sem essa chave, o assistente roda em modo de busca local (sem IA, mas funcional).
 
-### Chat web (recomendado)
+### 3. Rodar o assistente
 
 ```bash
+# Chat web (recomendado)
 streamlit run src/app.py
-```
 
-Abre um chat no navegador. A barra lateral mostra o modo ativo (IA ou local).
-
-### No terminal
-
-```bash
+# Terminal
 python src/assistente.py
-```
 
-O assistente mostra na abertura qual modo esta ativo (IA generativa ou busca local). Digite suas perguntas e use `sair` para encerrar.
-
-### No navegador (Jupyter Notebook)
-
-```bash
-pip install -r requirements.txt
+# Notebook no navegador
 jupyter notebook demo_notebook.ipynb
 ```
 
-O notebook abre no navegador e roda o assistente passo a passo.
+## 💬 Exemplo de Uso
 
-## Exemplos de Uso
+**Pergunta:** "Qual o grupo do Brasil?"
+**Copa 2026 AI:** "O Brasil está no Grupo C da Copa 2026, com Marrocos, Haiti e Escócia."
 
-```
-Voce: qual o grupo do brasil?
-Assistente: Brasil esta no Grupo C (CONMEBOL).
-Adversarios no grupo: Marrocos, Haiti, Escocia.
+**Pergunta:** "Quando e onde será a final?"
+**Copa 2026 AI:** "A final será em 19 de julho de 2026, no MetLife Stadium, em Nova Jersey."
 
-Voce: quem sao os favoritos?
-Assistente: Favoritos para a Copa 2026 (segundo a base): ...
+**Pergunta:** "Quem é o técnico atual da seleção brasileira?"
+**Copa 2026 AI:** "Carlo Ancelotti é o atual técnico do Brasil." (essa informação não está na base; o assistente busca na web e cita a fonte)
 
-Voce: quando e a final?
-Assistente: A final sera em 19 de julho de 2026, no MetLife Stadium (Nova Jersey).
-```
+## 📊 Métricas de Avaliação
 
-## Os 6 Passos do Desafio
+| Métrica | Objetivo |
+|---------|----------|
+| Assertividade | A resposta corresponde ao que foi perguntado? |
+| Segurança | Evita inventar informações (anti-alucinação)? |
+| Atualidade | Busca na web quando a base não tem o dado? |
+| Clareza | A resposta é simples e fácil de entender? |
 
-1. Documentacao: este README e a pasta `docs/`
-2. Base de conhecimento: `data/base_conhecimento.json`
-3. Prompts: `docs/PROMPTS.md` e o roteamento em `src/assistente.py`
-4. Aplicacao funcional: `src/assistente.py` e `demo_notebook.ipynb`
-5. Avaliacao e metricas: `docs/METRICAS.md`
-6. Pitch: `PITCH.md`
+Os casos de teste completos estão em [docs/METRICAS.md](docs/METRICAS.md).
 
-## Limitacoes Conhecidas
+## 🏆 Diferenciais
 
-- A base de conhecimento e pequena e cobre apenas parte das selecoes e jogadores.
-- No modo de busca local (sem chave de API), o entendimento e por palavras-chave, entao perguntas muito fora dos exemplos caem na resposta generica.
-- O modo de IA generativa depende de uma chave do Google Gemini (nivel gratuito).
-- Os dados sao estaticos e precisam ser atualizados manualmente no JSON.
+- **Dados reais:** base com os 12 grupos oficiais e as 48 seleções da Copa 2026
+- **IA generativa:** o Google Gemini entende a pergunta em linguagem natural
+- **Busca na web:** quando a pergunta foge da base, responde com dado atual e cita a fonte
+- **Anti-alucinação:** usa a base como fonte, admite quando não sabe e não inventa
+- **Funciona sem IA:** modo local de fallback, roda offline e sem chave de API
 
-## Possiveis Melhorias
+## 📄 Documentação Completa
 
-- Ampliar a base com todas as selecoes e mais jogadores
-- Conectar a uma API esportiva para dados atualizados
-- Criar uma interface web de chat
-- Suporte a mais idiomas
+Toda a documentação técnica, os prompts, as métricas e o pitch estão na pasta [docs/](docs/) e em [PITCH.md](PITCH.md).
 
-## Autor
+## 👤 Autor
 
-Jacielio (Cielio) Queiroz
+**Jacielio (Cielio) Queiroz**
 
-Projeto desenvolvido para o Desafio Final da DIO, Trilha Bradesco Dados, Ciberseguranca e GenAI.
+Projeto desenvolvido para o Desafio Final da DIO, Trilha Bradesco Dados, Cibersegurança e GenAI.
