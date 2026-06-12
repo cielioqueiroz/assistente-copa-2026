@@ -1,0 +1,231 @@
+{
+  "copa_2026": {
+    "informacoes_gerais": {
+      "nome": "FIFA World Cup 2026",
+      "edicao": 23,
+      "paises_sede": ["Estados Unidos", "Canadá", "México"],
+      "data_inicio": "2026-06-11",
+      "data_fim": "2026-07-19",
+      "total_equipes": 48,
+      "total_grupos": 12,
+      "equipes_por_grupo": 4,
+      "formato": "12 grupos de 4 equipes. Avancam os dois primeiros de cada grupo e os 8 melhores terceiros colocados, formando um mata-mata de 32 selecoes.",
+      "local_da_final": "MetLife Stadium (East Rutherford, Nova Jersey)",
+      "local_da_abertura": "Estádio Azteca (Cidade do México)"
+    },
+    "grupos_e_chaveamento": {
+      "grupo_a": {
+        "nome": "Grupo A",
+        "equipes": [
+          {"pais": "México", "confederacao": "CONCACAF"},
+          {"pais": "África do Sul", "confederacao": "CAF"},
+          {"pais": "Coréia do Sul", "confederacao": "AFC"},
+          {"pais": "Tchéquia", "confederacao": "UEFA"}
+        ]
+      },
+      "grupo_b": {
+        "nome": "Grupo B",
+        "equipes": [
+          {"pais": "Canadá", "confederacao": "CONCACAF"},
+          {"pais": "Bósnia e Herzegovina", "confederacao": "UEFA"},
+          {"pais": "Catar", "confederacao": "AFC"},
+          {"pais": "Suíça", "confederacao": "UEFA"}
+        ]
+      },
+      "grupo_c": {
+        "nome": "Grupo C",
+        "equipes": [
+          {"pais": "Brasil", "confederacao": "CONMEBOL"},
+          {"pais": "Marrocos", "confederacao": "CAF"},
+          {"pais": "Haiti", "confederacao": "CONCACAF"},
+          {"pais": "Escócia", "confederacao": "UEFA"}
+        ]
+      },
+      "grupo_d": {
+        "nome": "Grupo D",
+        "equipes": [
+          {"pais": "Estados Unidos", "confederacao": "CONCACAF"},
+          {"pais": "Paraguai", "confederacao": "CONMEBOL"},
+          {"pais": "Austrália", "confederacao": "AFC"},
+          {"pais": "Turquia", "confederacao": "UEFA"}
+        ]
+      },
+      "grupo_e": {
+        "nome": "Grupo E",
+        "equipes": [
+          {"pais": "Alemanha", "confederacao": "UEFA"},
+          {"pais": "Curaçao", "confederacao": "CONCACAF"},
+          {"pais": "Costa do Marfim", "confederacao": "CAF"},
+          {"pais": "Equador", "confederacao": "CONMEBOL"}
+        ]
+      },
+      "grupo_f": {
+        "nome": "Grupo F",
+        "equipes": [
+          {"pais": "Holanda", "confederacao": "UEFA"},
+          {"pais": "Japão", "confederacao": "AFC"},
+          {"pais": "Suécia", "confederacao": "UEFA"},
+          {"pais": "Tunísia", "confederacao": "CAF"}
+        ]
+      },
+      "grupo_g": {
+        "nome": "Grupo G",
+        "equipes": [
+          {"pais": "Bélgica", "confederacao": "UEFA"},
+          {"pais": "Egito", "confederacao": "CAF"},
+          {"pais": "Irã", "confederacao": "AFC"},
+          {"pais": "Nova Zelândia", "confederacao": "OFC"}
+        ]
+      },
+      "grupo_h": {
+        "nome": "Grupo H",
+        "equipes": [
+          {"pais": "Espanha", "confederacao": "UEFA"},
+          {"pais": "Cabo Verde", "confederacao": "CAF"},
+          {"pais": "Arábia Saudita", "confederacao": "AFC"},
+          {"pais": "Uruguai", "confederacao": "CONMEBOL"}
+        ]
+      },
+      "grupo_i": {
+        "nome": "Grupo I",
+        "equipes": [
+          {"pais": "França", "confederacao": "UEFA"},
+          {"pais": "Senegal", "confederacao": "CAF"},
+          {"pais": "Iraque", "confederacao": "AFC"},
+          {"pais": "Noruega", "confederacao": "UEFA"}
+        ]
+      },
+      "grupo_j": {
+        "nome": "Grupo J",
+        "equipes": [
+          {"pais": "Argentina", "confederacao": "CONMEBOL"},
+          {"pais": "Argélia", "confederacao": "CAF"},
+          {"pais": "Áustria", "confederacao": "UEFA"},
+          {"pais": "Jordânia", "confederacao": "AFC"}
+        ]
+      },
+      "grupo_k": {
+        "nome": "Grupo K",
+        "equipes": [
+          {"pais": "Portugal", "confederacao": "UEFA"},
+          {"pais": "República Democrática do Congo", "confederacao": "CAF"},
+          {"pais": "Uzbequistão", "confederacao": "AFC"},
+          {"pais": "Colômbia", "confederacao": "CONMEBOL"}
+        ]
+      },
+      "grupo_l": {
+        "nome": "Grupo L",
+        "equipes": [
+          {"pais": "Inglaterra", "confederacao": "UEFA"},
+          {"pais": "Croácia", "confederacao": "UEFA"},
+          {"pais": "Gana", "confederacao": "CAF"},
+          {"pais": "Panamá", "confederacao": "CONCACAF"}
+        ]
+      }
+    },
+    "favoritos": {
+      "titulo": "Principais candidatos ao titulo, segundo analistas e casas de apostas",
+      "observacao": "Sao apenas estimativas. O titulo nao esta decidido e surpresas sao comuns.",
+      "equipes_principais": [
+        {"ranking": 1, "pais": "Espanha", "motivo": "Campeã da Eurocopa 2024 com uma geração muito forte"},
+        {"ranking": 2, "pais": "França", "motivo": "Vice-campeã mundial em 2022 e elenco profundo"},
+        {"ranking": 3, "pais": "Argentina", "motivo": "Atual campeã do mundo (2022)"},
+        {"ranking": 4, "pais": "Inglaterra", "motivo": "Vice-campeã da Eurocopa 2024, elenco jovem e forte"},
+        {"ranking": 5, "pais": "Brasil", "motivo": "Tradição e forte poder ofensivo"},
+        {"ranking": 6, "pais": "Portugal", "motivo": "Geração talentosa, venceu a Liga das Nações 2025"},
+        {"ranking": 7, "pais": "Alemanha", "motivo": "Tradição vencedora e elenco renovado"}
+      ]
+    },
+    "jogadores_destaque": {
+      "brasil": [
+        {
+          "nome": "Vinícius Júnior",
+          "posicao": "Extremo Esquerdo",
+          "clube_atual": "Real Madrid",
+          "destaque": "Um dos melhores extremos do mundo"
+        },
+        {
+          "nome": "Neymar",
+          "posicao": "Atacante",
+          "clube_atual": "Santos",
+          "destaque": "Maior artilheiro da história da seleção brasileira"
+        }
+      ],
+      "argentina": [
+        {
+          "nome": "Lionel Messi",
+          "posicao": "Atacante",
+          "clube_atual": "Inter Miami",
+          "destaque": "Capitão e maior jogador argentino de todos os tempos"
+        },
+        {
+          "nome": "Enzo Fernández",
+          "posicao": "Meia",
+          "clube_atual": "Chelsea",
+          "destaque": "Eleito o melhor jovem da Copa do Mundo de 2022"
+        },
+        {
+          "nome": "Julián Álvarez",
+          "posicao": "Atacante",
+          "clube_atual": "Atlético Madrid",
+          "destaque": "Campeão do mundo em 2022"
+        }
+      ],
+      "franca": [
+        {
+          "nome": "Kylian Mbappé",
+          "posicao": "Atacante",
+          "clube_atual": "Real Madrid",
+          "destaque": "Um dos melhores atacantes do mundo"
+        },
+        {
+          "nome": "Antoine Griezmann",
+          "posicao": "Atacante",
+          "clube_atual": "Atlético Madrid",
+          "destaque": "Experiência e regularidade em grandes torneios"
+        }
+      ]
+    },
+    "datas_importantes": [
+      {
+        "data": "2025-12-05",
+        "evento": "Sorteio final dos grupos",
+        "local": "Kennedy Center, Washington D.C."
+      },
+      {
+        "data": "2026-06-11",
+        "evento": "Jogo de abertura da Copa 2026",
+        "local": "Estádio Azteca, Cidade do México"
+      },
+      {
+        "data": "2026-07-19",
+        "evento": "Final da Copa 2026",
+        "local": "MetLife Stadium, Nova Jersey"
+      }
+    ],
+    "curiosidades": [
+      {
+        "titulo": "Primeira Copa com 48 seleções",
+        "descricao": "A Copa 2026 é a primeira com 48 seleções, divididas em 12 grupos de 4 equipes."
+      },
+      {
+        "titulo": "Três países-sede",
+        "descricao": "Pela primeira vez, a Copa é organizada por três países: Estados Unidos, Canadá e México."
+      },
+      {
+        "titulo": "Novo mata-mata de 32",
+        "descricao": "Avancam os dois primeiros de cada grupo mais os 8 melhores terceiros colocados, criando uma fase de 32 selecoes."
+      }
+    ]
+  },
+  "instrucoes_uso": {
+    "descricao": "Base de conhecimento com informacoes da Copa do Mundo 2026. Use-a para responder sobre grupos, selecoes, jogadores, datas e favoritos.",
+    "restricoes": [
+      "Responda usando os dados desta base.",
+      "Se nao tiver a informacao, diga que nao sabe ou busque uma fonte atual.",
+      "Nao invente dados ou estatisticas.",
+      "Mantenha uma abordagem neutra entre as selecoes.",
+      "Apresente os favoritos como estimativas."
+    ]
+  }
+}
